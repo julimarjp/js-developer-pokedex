@@ -37,6 +37,34 @@
         </div>
     </section>
 
+    <!-- Modal para listar os detalhes do pokemon-->
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2><span id="pokemonName">NOME</span></h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 900;">Peso</td>
+                        <td><span id="weight">100</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 900;">Altura</td>
+                        <td> <span id="height">1,78</span></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 900;">Especialidade(s)</td>
+                        <td><span id="ability1">Especialidade 1</span></td>
+                        <td><span id="ability2">Especialidade 2</span></td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+    </div>
+
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
